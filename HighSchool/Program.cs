@@ -13,10 +13,52 @@ namespace HighSchool
             //The list should output their first name, last name, grade and GPA. 
             //It should be sorted by highest grade, then highest GPA, then last name, then first name.
 
+            /*1. The Student class should have a static method called "StarStudents" which takes a Student list 
+             * and returns a Student list that
+             * - contains only the students in grades 9-12
+             * - is sorted by highest grade, then highest GPA, then last name, then first name. (edited)
+             * 2. The Student class GPA property should have a min value of 0 and max value of 4. 
+             * If a user of the class tries to set the value of the GPA below/above the min/max, 
+             * it will be set at the min/max instead.
+             * 3. The Student Grade has a min of 1 and a max of 12. If a user of the class tries to set 
+             * the value of the Grade below/above the min/max, it will be set at the min/max instead.
+             * The rest of the instructions about printing etc. aren't tested and therefore aren't 
+             * part of the requirements. Its probably a good idea to do so for testing purposes.
+             */
+
             List<Student> studentList = new List<Student>
             {
-                
+                new Student {FirstName = "John", LastName = "Brown", Grade = 3, GPA = 4.0 },
+                new Student {FirstName = "Christine", LastName = "Brown", Grade = 10, GPA = 3.5 },
+                new Student {FirstName = "Sarah", LastName = "Striker", Grade = 6, GPA = 0.5 },
+                new Student {FirstName = "Jessica", LastName = "Reynolds", Grade = 12, GPA = 3.6 },
+                new Student {FirstName = "Wyatt", LastName = "Mayhan", Grade = 1, GPA = 2.5 },
+                new Student {FirstName = "Xander", LastName = "Carrington", Grade = 9, GPA = 1.9 },
+                new Student {FirstName = "Riley", LastName = "Vu", Grade = 5, GPA = 2.8 },
+                new Student {FirstName = "Jessie", LastName = "Chin", Grade = 2, GPA = 3.2 },
+                new Student {FirstName = "Maria", LastName = "Espinoza", Grade = 8, GPA = 2.0 },
+                new Student {FirstName = "Dean", LastName = "Winchester", Grade = 4, GPA = 4.0 },
+                new Student {FirstName = "Eric", LastName = "Prince", Grade = 7, GPA = 1.7 },
+                new Student {FirstName = "Elizabeth", LastName = "Jones", Grade = 11, GPA = 3.9 },
+                new Student { FirstName = "AAA", LastName = "ZZZ", GPA = 3.0, Grade = 9 },
+                new Student { FirstName = "BBB", LastName = "LastTwo", GPA = 3.1, Grade = 9 },
+                new Student { FirstName = "CCC", LastName = "LastThree", GPA = 3.2, Grade = 9 },
+                new Student { FirstName = "FirstFourB", LastName = "LastFourB", GPA = 3.3, Grade = 9 },
+                new Student { FirstName = "FirstFourC", LastName = "LastFourA", GPA = 3.3, Grade = 9 },
+                new Student { FirstName = "FirstFourA", LastName = "LastFourA", GPA = 3.3, Grade = 9 },
+                new Student { FirstName = "FirstFive", LastName = "LastFive", GPA = 3.0, Grade = 12 },
+                new Student { FirstName = "FirstSix", LastName = "LastSix", GPA = 3.1, Grade = 12 },
+                new Student { FirstName = "FirstSeven", LastName = "LastSeven", GPA = 3.2, Grade = 12 },
+                new Student { FirstName = "FirstEight", LastName = "LastEight", GPA = 3.3, Grade = 12 }
             };
+
+            List<Student> HighSchoolerList = Student.StarStudents(studentList);
+            foreach (Student student in HighSchoolerList)
+            {
+                //The list should output their first name, last name, grade and GPA. 
+                //It should be sorted by highest grade, then highest GPA, then last name, then first name.
+                Console.WriteLine("{0} {1} {2} {3}", student.FirstName, student.LastName, student.Grade, student.GPA);
+            }
 
 
             Console.ReadLine();
