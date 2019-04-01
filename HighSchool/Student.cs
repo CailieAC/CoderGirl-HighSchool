@@ -78,13 +78,11 @@ namespace HighSchool
             //return a Student list that contains only the students in grade 9-12
             //and is sorted by highest grade, then highest GPA, then last name, then first name.
 
-            var starStudentList = studentList.Where(student => student.Grade >= 9 && student.GPA >= 3)
+            return studentList.Where(student => student.Grade >= 9 && student.GPA >= 3)
                 .OrderByDescending(student => student.Grade)
                 .ThenByDescending(student => student.GPA)
                 .ThenBy(student => student.LastName)
                 .ThenBy(student => student.FirstName).ToList();
-           
-            return starStudentList;
 
         }
     }

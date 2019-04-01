@@ -40,16 +40,16 @@ namespace HighSchool
                 new Student {FirstName = "Dean", LastName = "Winchester", Grade = 4, GPA = 4.0 },
                 new Student {FirstName = "Eric", LastName = "Prince", Grade = 7, GPA = 1.7 },
                 new Student {FirstName = "Elizabeth", LastName = "Jones", Grade = 11, GPA = 3.9 },
-                new Student { FirstName = "AAA", LastName = "ZZZ", GPA = 3.0, Grade = 9 },
-                new Student { FirstName = "BBB", LastName = "LastTwo", GPA = 3.1, Grade = 9 },
-                new Student { FirstName = "CCC", LastName = "LastThree", GPA = 3.2, Grade = 9 },
-                new Student { FirstName = "FirstFourB", LastName = "LastFourB", GPA = 3.3, Grade = 9 },
-                new Student { FirstName = "FirstFourC", LastName = "LastFourA", GPA = 3.3, Grade = 9 },
-                new Student { FirstName = "FirstFourA", LastName = "LastFourA", GPA = 3.3, Grade = 9 },
-                new Student { FirstName = "FirstFive", LastName = "LastFive", GPA = 3.0, Grade = 12 },
-                new Student { FirstName = "FirstSix", LastName = "LastSix", GPA = 3.1, Grade = 12 },
-                new Student { FirstName = "FirstSeven", LastName = "LastSeven", GPA = 3.2, Grade = 12 },
-                new Student { FirstName = "FirstEight", LastName = "LastEight", GPA = 3.3, Grade = 12 }
+                new Student { FirstName = "Alan", LastName = "Z", GPA = 3.0, Grade = 9 },
+                new Student { FirstName = "Barb", LastName = "Y", GPA = 3.1, Grade = 9 },
+                new Student { FirstName = "Cassie", LastName = "X", GPA = 3.2, Grade = 9 },
+                new Student { FirstName = "Derek", LastName = "W", GPA = 3.3, Grade = 9 },
+                new Student { FirstName = "Elen", LastName = "V", GPA = 3.3, Grade = 9 },
+                new Student { FirstName = "Fola", LastName = "U", GPA = 3.3, Grade = 9 },
+                new Student { FirstName = "Ginny", LastName = "T", GPA = 3.0, Grade = 12 },
+                new Student { FirstName = "Hannah", LastName = "S", GPA = 3.1, Grade = 12 },
+                new Student { FirstName = "Ian", LastName = "R", GPA = 3.2, Grade = 12 },
+                new Student { FirstName = "Jolynn", LastName = "Q", GPA = 3.3, Grade = 12 }
             };
 
             List<Student> HighSchoolerList = Student.StarStudents(studentList);
